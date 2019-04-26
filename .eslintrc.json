@@ -1,0 +1,38 @@
+{
+  "plugins": ["prettier"],
+  "env": {
+    "node": true,
+		"es6": true,
+		"browser": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "eqeqeq": [2, "allow-null"],
+    "brace-style": [
+      2,
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "linebreak-style": 0,
+    "no-console": 0,
+    "no-unused-vars": [
+      2,
+      {
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "prettier/prettier": "error"
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "globals": {
+		"Highcharts": true
+	}
+}

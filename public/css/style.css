@@ -1,0 +1,119 @@
+body, html {
+  pading: 0;
+  margin: 0;
+  font-family: sans-serif; }
+
+.card {
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .card > h1 {
+    font-size: 1.2em; }
+
+table {
+  border: solid 1px #DDEEEE;
+  border-collapse: collapse;
+  border-spacing: 0; }
+  table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff; }
+  table table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff; }
+
+input {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid black; }
+
+input[type=text] {
+  margin: 20px; }
+
+input[type=button] {
+  cursor: pointer; }
+  input[type=button]:hover {
+    background: #00BCD4;
+    color: white; }
+
+div.wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column; }
+  div.wrapper div.top {
+    height: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center; }
+  div.wrapper div.bottom {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0;
+            flex: 1 0;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex; }
+    div.wrapper div.bottom div.left {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+              flex: 1;
+      overflow-y: scroll; }
+    div.wrapper div.bottom div.right {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+              flex: 1;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      overflow-y: hidden; }
+      div.wrapper div.bottom div.right div.table {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0;
+                flex: 1 0;
+        overflow-y: scroll; }
+        div.wrapper div.bottom div.right div.table table {
+          width: 100%; }
+      div.wrapper div.bottom div.right div.histogram {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0;
+                flex: 1 0;
+        overflow-y: scroll; }
+        div.wrapper div.bottom div.right div.histogram div.histogram-container {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+          height: 100%;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+                  flex-direction: column; }
+
+@media screen and (max-width: 500px) {
+  div.bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column; } }

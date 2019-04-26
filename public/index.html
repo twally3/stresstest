@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Stress test</title>
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="top">
+				<input type="text" id="user-input" placeholder="Username" autofocus />
+				<input type="button" value="Select" id="user-select" />
+			</div>
+			<div class="bottom">
+				<div class="left" id="posts-container"></div>
+				<div class="right">
+					<div class="table" id="table-container">
+						<table>
+							<thead>
+								<tr>
+									<th>Word</th>
+									<th>% of all comments</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+					<div class="histogram">
+						<div class="histogram-container" id="histogram-container">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="js/app.js" type="module"></script>
+	</body>
+</html>

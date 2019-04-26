@@ -1,0 +1,98 @@
+body, html
+	pading: 0
+	margin: 0
+	font-family: sans-serif
+
+.card
+	background: white
+	border-radius: 6px
+	border: 1px solid #eee
+	margin: 0 20px
+	margin-bottom: 20px
+	padding: 10px
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+	& > h1
+		font-size: 1.2em
+
+// I just grabbed the table styles off the internet to save time. 
+table
+	border: solid 1px #DDEEEE
+	border-collapse: collapse
+	border-spacing: 0
+
+	& thead th
+		background-color: #DDEFEF
+		border: solid 1px #DDEEEE
+		color: #336B6B
+		padding: 10px
+		text-align: left
+		text-shadow: 1px 1px 1px #fff
+
+	& table tbody td
+		border: solid 1px #DDEEEE
+		color: #333
+		padding: 10px
+		text-shadow: 1px 1px 1px #fff
+
+input
+	display: inline-block
+	padding: 10px
+	border-radius: 6px
+	outline: none
+	border: 1px solid black
+
+input[type=text]
+	margin: 20px
+
+input[type=button]
+	cursor: pointer
+
+	&:hover
+		background: #00BCD4
+		color: white
+
+div.wrapper
+	height: 100vh
+	display: flex
+	flex-direction: column
+	
+	div.top
+		height: 100px
+		display: flex
+		align-items: center
+
+	div.bottom
+		flex: 1 0
+		overflow-y: hidden
+		display: flex
+
+		div.left
+			flex: 1
+			overflow-y: scroll
+
+		div.right
+			display: flex
+			flex: 1
+			flex-direction: column
+			overflow-y: hidden
+
+			div.table
+				flex: 1 0
+				overflow-y: scroll
+
+				table
+					width: 100%
+
+			div.histogram
+				flex: 1 0
+				overflow-y: scroll
+
+				div.histogram-container
+					display: flex
+					height: 100%
+					flex-direction: column
+
+@media screen and (max-width: 500px)
+	div.bottom
+		flex-direction: column
